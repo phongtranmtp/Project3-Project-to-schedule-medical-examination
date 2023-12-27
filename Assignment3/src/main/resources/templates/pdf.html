@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <title>Title</title>
+</head>
+<body>
+<div class="title align-center" style="padding-top:20px; padding-bottom:20px">
+    <b style="text-transform: uppercase">Phiếu thông tin khám chữa bệnh</b>
+</div>
+<div class="content" >
+    <p class="parameter">
+        Họ và tên:
+        <span th:text="${data.patient.user.name}"></span>
+    </p>
+    <p class="parameter">
+        Giới tính: <span th:text="${data.patient.user.gender}"></span>
+    </p>
+    <p class="parameter">
+        Số điện thoại: <span th:text="${data.patient.user.phone}"></span>
+    </p>
+    <p class="parameter">
+        Địa chỉ: <span th:text="${data.patient.user.address}"></span>
+    </p>
+    <p class="parameter">
+        Bác sĩ khám: <span th:text="${data.doctorUser.user.name}"></span>
+    </p>
+    <p class="parameter">
+        Lý do khám bệnh: <span th:text="${data.pathological}"></span>
+    </p>
+</div>
+</body>
+</html>
